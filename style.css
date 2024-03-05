@@ -10,6 +10,7 @@ html {
     grid-template-columns: 40% 60%;
     /* Chia màn hình thành hai cột, mỗi cột chiếm 40% và 60% chiều rộng */
     height: 100%;
+    font-size: 1.1em;
 }
 
 .left-column {
@@ -21,8 +22,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -100px; /* Thay đổi giá trị margin-top tại đây */
+    margin-top: -100px;
+    /* Thay đổi giá trị margin-top tại đây */
     text-align: justify;
+    
 }
 
 .personal-info {
@@ -39,10 +42,14 @@ html {
     font-weight: 400;
 }
 
-.personal-info a:hover {
+a:hover {
     cursor: pointer;
     width: 100px;
+    color: #069;
+    font-weight: bold;
 }
+
+
 
 .personal-info img {
     width: 270px;
@@ -55,13 +62,14 @@ html {
     overflow: clip;
     font: 14px / 1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #727272;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin-left: 70px;
 }
 
 .right-column {
     padding: 20px;
     margin-right: 200px;
+    text-align: justify;
 }
 
 .right-column img {
@@ -70,3 +78,105 @@ html {
     align-items: center;
     max-width: 65%;
 }
+
+.right-column h3 {
+    color: #393939;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+
+.right-column p {
+    color: #727272;
+}
+
+.right-column ul li {
+    line-height: 1.6;
+}
+
+/* CSS cho các thiết bị có độ rộng màn hình lớn hơn hoặc bằng 768px */
+@media screen and (min-width: 768px) {
+
+    /* Loại bỏ quy tắc CSS cho .wrapper, .left-column, .personal-info và .right-column */
+    .wrapper {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 100%;
+    }
+
+    .left-column {
+        padding: 20px;
+        width: 35%;
+        height: 50%;
+        position: relative;
+        margin-left: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -170px;
+        text-align: justify;
+    }
+
+    .personal-info {
+        height: auto;
+        position: fixed;
+        width: 30%;
+    }
+
+    .right-column {
+        padding: 20px;
+        margin-right: 200px;
+    }
+
+    .right-column img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 65%;
+    }
+}
+
+
+
+/* CSS cho các thiết bị có độ rộng màn hình nhỏ hơn 768px */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-column {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .personal-info {
+        position: static;
+        width: 100%;
+    }
+
+    .right-column {
+        margin-right: 0;
+        padding: 20px;
+    }
+
+    .right-column img {
+        max-width: 100%;
+    }
+
+    .description {
+        /* Định nghĩa các thuộc tính CSS tại đây */
+        display: none;
+    }
+
+}
+
