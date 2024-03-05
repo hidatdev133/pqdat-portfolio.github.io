@@ -1,0 +1,72 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* Chia màn hình thành hai cột, mỗi cột chiếm 40% và 60% chiều rộng */
+    height: 100%;
+}
+
+.left-column {
+    padding: 20px;
+    width: 35%;
+    height: 50%;
+    position: relative;
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px; /* Thay đổi giá trị margin-top tại đây */
+    text-align: justify;
+}
+
+.personal-info {
+    height: auto;
+    position: fixed;
+    width: 30%
+}
+
+.personal-info a {
+    color: #267CB9;
+    text-decoration: none;
+    font: 14px / 1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 50px;
+    font-weight: 400;
+}
+
+.personal-info a:hover {
+    cursor: pointer;
+    width: 100px;
+}
+
+.personal-info img {
+    width: 270px;
+    /* Kích thước cố định cho hình ảnh */
+    height: 270px;
+    /* Kích thước cố định cho hình ảnh */
+    border-radius: 50%;
+    /* Tạo hình tròn */
+    max-width: 65%;
+    overflow: clip;
+    font: 14px / 1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #727272;
+    border-radius: 50%; 
+    margin-left: 70px;
+}
+
+.right-column {
+    padding: 20px;
+    margin-right: 200px;
+}
+
+.right-column img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 65%;
+}
