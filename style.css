@@ -31,7 +31,8 @@ html {
 .personal-info {
     height: auto;
     position: fixed;
-    width: 30%
+    width: 30%;
+    background-color: antiquewhite;
 }
 
 .personal-info a {
@@ -48,8 +49,6 @@ a:hover {
     color: #069;
     font-weight: bold;
 }
-
-
 
 .personal-info img {
     width: 270px;
@@ -70,6 +69,7 @@ a:hover {
     padding: 20px;
     margin-right: 200px;
     text-align: justify;
+    
 }
 
 .right-column img {
